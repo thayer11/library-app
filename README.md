@@ -2,6 +2,8 @@
 
 Your goal is to build an advanced public library application in Ruby on Rails.
 
+![snape](https://media.giphy.com/media/jNcu2YunWZBcI/giphy.gif)
+
 By the end of this lab you will have:
 
 * Basic-Auth: Login, Signup, Logout
@@ -14,8 +16,9 @@ By the end of this lab you will have:
 Create a new rails app:
 
 ```bash
-rails new lib_app -T -d postgresql
+rails new lib_app -T -B -d postgresql
 cd lib_app
+bundle
 ```
 
 Create the databases:
