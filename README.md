@@ -780,7 +780,7 @@ We can test this by going to `localhost:/users/1/libraries`.
 
 ## Add A User Lib
 
-So now that we can view which libraries a `user` has joined, we can go ahead and make a button that allows a user to `join` a library.
+So now that we can view which libraries a `user` has joined, we can go ahead and make a button that allows a user to `join` a library. BONUS: only show the join button if the current user hasn't joined that library yet! (hint: try using `exclude?`)
 
 
 Let's go back to `libraries#index` and add a button to do just that.
