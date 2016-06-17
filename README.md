@@ -514,6 +514,7 @@ end
 
 
 Then when we try to login let's see what happens. Do you see a welcome? If so you're ready to continue otherwise you should start the long work of debugging.
+BONUS: refactor to add validations for log in 
 
 ### Finishing Sign Up
 
