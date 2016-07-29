@@ -932,4 +932,3 @@ end
 * Can you add books to the library?
     - What kind of a relationship is that? Where would foreign keys like `book_id` and `library_id` live in your database tables?
 
-Solution [here](https://github.com/awhit012/lib-app)
