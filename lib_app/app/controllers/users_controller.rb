@@ -13,7 +13,12 @@ class UsersController < ApplicationController
 	def create 
 		user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
 		@user = User.create(user_params)
+		login(@user)
+		redirect_to "/users/#{@user.id}"
+	end
 
-		redirect_to "/users"
+	def show
+		@user = User.find(params[:id])
+		render :show
 	end
 end
