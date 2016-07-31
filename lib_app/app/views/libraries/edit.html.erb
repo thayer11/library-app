@@ -1,0 +1,7 @@
+<%= form_for :library, url: "/libraries", method: "post" do |f| %>
+	Name: <%=f.text_field :name %>
+	Floor Count: <%=f.number_field :floor_count %>
+	Floor Area: <%=f.number_field :floor_area %>
+	<%=f.submit "Save Library" %>
+<%end%>
+

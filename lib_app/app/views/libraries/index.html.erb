@@ -1,7 +1,14 @@
-Hi
+<h1> All Libraries </h1>
+
 <% @libraries.each do |library| %>
-	<div>
-		<h3><%= library.name %></h3>
-	</div>
-	<br>
+  <div>
+    <h3> Name: <%= library.name %></h3>
+ 	<h3> Floor Count: <%= library.floor_count %></h3>
+  	<h3> Floor Area: <%= library.floor_area %></h3>
+  <% if @current_user %>
+      <%= button_to "Join", library_users_path(library) %>
+    <% end %>
+  </div>
+  <br>
 <% end %>
+
