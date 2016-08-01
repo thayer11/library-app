@@ -9,3 +9,4 @@ class User < ApplicationRecord
 		@user.try(:authenticate, params[:password])
 	end
 end
+#...
